@@ -1,0 +1,36 @@
+[server]
+    host = "localhost"
+    port = 3000
+
+[mongodb]
+    host = "localhost"
+    port = 27017
+    dbname = "zewise"
+
+[redis]
+    host = "localhost"
+    username = ""
+    password = ""
+    port = 6379
+    db = 0
+
+[minio]
+    host = "127.0.0.1"
+    port = 9000
+    access = "9GyFokjE4fjgcBdzotqv"
+    secret = "OyxGqljej4Ez09Q9pn2ATrVsWjAzlaB11QJzaQqf"
+
+[search_service]
+    host = "localhost"
+    port = 5016
+
+[compress]
+    # LevelDisabled (-1): Compression is disabled.
+    # LevelDefault (0): Default compression level.
+    # LevelBestSpeed (1): Best compression speed.
+    # LevelBestCompression (2): Best compression.
+    level = 2
+
+[env]
+    # development, production
+    type = "development"
