@@ -9,11 +9,12 @@ package main
 import (
 	"context"
 	"fmt"
+	"log"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/compress"
 	"github.com/gofiber/fiber/v2/middleware/logger"
-	_ "github.com/joho/godotenv/autoload"
+	"github.com/joho/godotenv"
 	"github.com/minio/minio-go/v7"
 	"github.com/minio/minio-go/v7/pkg/credentials"
 	"github.com/redis/go-redis/v9"
@@ -48,6 +49,12 @@ func init() {
 	config, err = configs.NewConfig()
 	if err != nil {
 		panic(err)
+	}
+
+	// 加载环境变量
+	err = godotenv.Load("secrect.env")
+	if err != nil {
+		log.Panic("加载环境变量失败")
 	}
 
 	// 初始化 Redis
