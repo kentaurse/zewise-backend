@@ -7,6 +7,7 @@ require (
 	github.com/chai2010/webp v1.1.1
 	github.com/gofiber/fiber/v2 v2.52.4
 	github.com/golang-jwt/jwt/v5 v5.2.1
+	github.com/joho/godotenv v1.5.1
 	github.com/minio/minio-go/v7 v7.0.69
 	github.com/redis/go-redis/v9 v9.5.1
 	github.com/spf13/viper v1.18.2
@@ -17,7 +18,6 @@ require (
 require (
 	github.com/dustin/go-humanize v1.0.1 // indirect
 	github.com/golang/snappy v0.0.1 // indirect
-	github.com/joho/godotenv v1.5.1 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.6 // indirect
 	github.com/minio/md5-simd v1.1.2 // indirect
